@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+body {
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+a:link, a:visited {
+	color: #F36F21;
+}
+a:hover, a:active {
+	color: #900;
+}
+
+.wrapper {
+	clear: both;
+	float: left;
+	width: 600px;
+}
+
+#header, #main, #footer {
+	clear: both;
+	float: left;
+	width: 600px;
+}
+
+#header {
+	border-bottom: 1px solid #F36F21;
+	margin: 20px 0;
+	padding-bottom: 20px;
+}
+#header div {
+	float:left;
+}
+#header img {
+	margin: 20px 20px;
+}
+#header h1 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 55px;
+	font-weight: bold;
+	margin: 5px 0 0 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+#header p {
+	margin: -10px 0 0 0;
+	padding: 0 0 0 5px;
+}
+
