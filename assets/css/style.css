@@ -47,4 +47,6 @@ a:hover, a:active {
 	margin: -10px 0 0 0;
 	padding: 0 0 0 5px;
 }
-
+li.idea {
+	color: #999;
+}
