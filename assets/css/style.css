@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
 
 body {
-	max-width: 600px;
+	max-width: 610px;
 	margin: 0 auto;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -15,13 +15,13 @@ a:hover, a:active {
 .wrapper {
 	clear: both;
 	float: left;
-	width: 600px;
+	width: 610px;
 }
 
 #header, #main, #footer {
 	clear: both;
 	float: left;
-	width: 600px;
+	width: 610px;
 }
 
 #header {
