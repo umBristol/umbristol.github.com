@@ -7,9 +7,9 @@
 		<meta charset="utf-8">
 		<title>{{ site.data.meta.title }} - {{ site.data.meta.description }}</title>
 		<link type="text/css" rel="stylesheet" href="assets/css/style.css">
-<script type="text/javascript">
+{% if site.data.meta.ga_id != "" %}<script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-122639-11']);
+  _gaq.push(['_setAccount', '{{ site.data.meta.ga_id }}']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -17,7 +17,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
+</script>{% endif %}
 	</head>
 	<body>
 		<a class="fork-me" href="https://github.com/umBristol/umbristol.github.com"><img style="position:absolute;top:0;right:0;border:0;z-index:1999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
