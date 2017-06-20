@@ -6,7 +6,7 @@ body {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 a:link, a:visited {
-	color: #F36F21;
+	color: #00AEA2;
 }
 a:hover, a:active {
 	color: #900;
@@ -25,7 +25,7 @@ a:hover, a:active {
 }
 
 #header {
-	border-bottom: 1px solid #F36F21;
+	border-bottom: 1px solid #00AEA2;
 	margin: 20px 0;
 	padding-bottom: 20px;
 }
