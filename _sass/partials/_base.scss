@@ -136,7 +136,7 @@ blockquote {
  * Spans
  */
 span {
-  .orange {
+  &.orange {
     color: $umbraco-orange;
   }
 }
