@@ -4,22 +4,31 @@ title:  "We've updated our site!"
 date:   2017-06-27 18:19:32 +0100
 categories: umbristol
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+We've been looking at possible options in terms of providing a better online experience and have decided that Jekyll + GitHub Pages is the way forward for this site.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+There are a few reasons for this:
 
-Jekyll also offers powerful support for code snippets:
+- we already had a simple static site
+- we were starting to use some of the features that Jekyll + GitHub Pages provides
+- it's straightforward to make changes
+- posts can be added in markdown
+- changes are open to everyone
+- it's easy to push updates
+- it's free!
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+And that's about it really, we'll be looking to make some enhancements along the way as we start to figure out how we can improve.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+### Contributions
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+As mentioned above, we would gladly accept any PRs for any updates that you feel the site needs. Here's a few ideas:
+
+- spruce up the site with some extra styles
+- integrate meetup so we can pull in the events dynamically
+- make a kick ass [404](/404/) page
+- add [jekyll-emoji](https://github.com/jekyll/jemoji) support
+- add some other [jekyll plugin](https://github.com/jekyll) that takes your fancy
+- revert all the colours to Umbraco <span class="orange">orange</span>
+
+### References
+
+Check out the [Jekyll docs](https://jekyllrb.com/docs/home) for more info on how to get the most out of Jekyll. 

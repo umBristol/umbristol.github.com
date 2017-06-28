@@ -1,16 +1,17 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
+# This config file is meant for settings that affect your whole site, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+#
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Site settings
 title: umBristol
 description: The Bristol Umbraco User Group.
 baseurl: ""
@@ -24,6 +25,7 @@ meetup_username: umBristol
 slack_signup: https://umbristolautosignup.herokuapp.com/
 google_analytics: UA-122639-11
 
+# collections
 collections:
   events:
     output: true
@@ -33,6 +35,5 @@ collections:
 github: [metadata]
 repository: umBristol/umbristol.github.com
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed

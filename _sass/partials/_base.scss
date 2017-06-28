@@ -133,6 +133,17 @@ blockquote {
 
 
 /**
+ * Spans
+ */
+span {
+  .orange {
+    color: $umbraco-orange;
+  }
+}
+
+
+
+/**
  * Code formatting
  */
 pre,
