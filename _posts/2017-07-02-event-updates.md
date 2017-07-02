@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Events listing updates"
-categories: umbristol
+categories: jekyll
 ---
 We've pushed some updates around the event listings. Previously, we were just relying on things being in the future, now it's much more dynamic!
 
@@ -26,4 +26,6 @@ In our layout file, we have an include which pulls in the relevant events (as us
 
 Hopefully that gives you an idea of how you can quickly build some useful functionality in to a static site using Jekyll. 
 
-Please feel free to share this post and give it a :+1:
+-- 
+
+P.S. You might be thinking why we are writing about Jekyll when this is an Umbraco user group. We will definitely be posting about Umbraco a lot more in the future. The plan currently is to do some write-ups from the meetups we hold and also to talk about things going on in the umBristol community.
