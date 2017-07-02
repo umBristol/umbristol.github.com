@@ -1,0 +1,29 @@
+{% if include.previous %}
+    {% comment %} <!-- Display previous events --> {% endcomment %}
+    {% assign collection = (site.events | where_exp:"item", "item.datetime < site.time") %}
+    {% for event in collection %}
+        {% assign eventyear = event.datetime | date: "%Y" %}
+        {% if eventyear == include.year %}
+            {% assign date_format = site.date_format | default: "%A %B %d, %Y" %}
+            <li>
+                <a href="{{ event.meetup }}">{{ event.title }}</a>
+                - {{ event.datetime | date: date_format }}
+                @ {{ event.host }}
+            </li>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {% comment %} <!-- Display upcoming events --> {% endcomment %}
+    {% assign collection = (site.events | where_exp:"item", "item.datetime > site.time") %}
+    {% for event in collection %}
+        <li>
+            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+            <span class="post-meta">{{ event.datetime | date: date_format }}</span>
+            
+            <h2>
+                <a class="post-link" href="{{ event.meetup }}">{{ event.title | escape }}</a>
+            </h2>
+            <p>Hosted by {{ event.host }}</p>
+        </li>
+    {% endfor %}
+{% endif %}

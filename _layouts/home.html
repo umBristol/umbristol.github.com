@@ -7,16 +7,6 @@ layout: default
 
   <h1 class="page-heading">Upcoming Events</h1>
   <ul class="post-list">
-    {% for event in site.events %}
-      <li>
-        {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ event.datetime | date: date_format }}</span>
-        
-        <h2>
-          <a class="post-link" href="{{ event.meetup }}">{{ event.title | escape }}</a>
-        </h2>
-        <p>Hosted by {{ event.host }}</p>
-      </li>
-    {% endfor %}
+    {% include events.html %}
   </ul>
 </div>
