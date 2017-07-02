@@ -35,5 +35,8 @@ collections:
 github: [metadata]
 repository: umBristol/umbristol.github.com
 markdown: kramdown
+highlighter: rouge
 gems:
   - jekyll-feed
+  - jekyll-gist
+  - jemoji
