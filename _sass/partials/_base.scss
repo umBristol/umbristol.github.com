@@ -219,6 +219,10 @@ pre {
 .social-media-list {
   .icon {
     padding-right: 5px;
+
+    &--slack {
+      padding-right: 10px;
+    }
   }
 
   li + li {
