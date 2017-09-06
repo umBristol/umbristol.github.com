@@ -5,6 +5,11 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="social-media-list">
+          {% if site.meetup_username %}
+          <li>
+            {% include icon.html icon="meetup" username=site.meetup_username %}
+          </li>
+          {% endif %}
           {% if site.github_username %}
           <li>
             {% include icon.html icon="github" username=site.github_username %}

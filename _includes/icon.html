@@ -1,4 +1,6 @@
-{% if include.icon == "github" %}
+{% if include.icon == "meetup" %}
+    <a href="https://www.meetup.com/{{ site.meetup_username }}/"><span class="icon icon--meetup">{% include icon-meetup.svg %}</span><span class="username">Meetup</span></a>
+{% elsif include.icon == "github" %}
     <a href="https://github.com/{{ include.username }}"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">Github</span></a>
 {% elsif include.icon == "twitter" %}
     <a href="https://twitter.com/{{ include.username }}"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">Twitter</span></a>
