@@ -14,9 +14,9 @@
     {% endfor %}
 {% else %}
     <!-- Display upcoming events - {{ site.time }} -->
-    {{ if collection.size > 0 }}
     {% assign collection = (site.events | where_exp:"item", "item.datetime > site.time") | reverse %}
 
+    {% if collection.size > 0 %}
         {% for event in collection %}       
         <li>
             <span class="post-meta">{{ event.datetime | date: date_format }}</span>
@@ -26,7 +26,7 @@
             <p>Hosted by {{ event.host }}</p>
         </li>
         {% endfor %}
-    {{ else }}
+    {% else %}
         <li>There are no upcoming events to display.</li>
-    {{ endif }}
+    {% endif %}
 {% endif %}
