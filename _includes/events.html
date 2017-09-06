@@ -1,7 +1,7 @@
 {% assign date_format = site.date_format | default: "%A %B %d, %Y" %}
 {% if include.previous %}
     {% comment %} <!-- Display previous events --> {% endcomment %}
-    {% assign collection = (site.events | where_exp:"item", "item.datetime < site.time") %}
+    {% assign collection = (site.events | where_exp:"item", "item.datetime < site.time") | reverse %}
     {% for event in collection %}
         {% assign eventyear = event.datetime | date: "%Y" %}
         {% if eventyear == include.year %}
@@ -14,9 +14,9 @@
     {% endfor %}
 {% else %}
     <!-- Display upcoming events - {{ site.time }} -->
-    {% assign collection = (site.events | where_exp:"item", "item.datetime > site.time") %}
-    
     {{ if collection.size > 0 }}
+    {% assign collection = (site.events | where_exp:"item", "item.datetime > site.time") | reverse %}
+
         {% for event in collection %}       
         <li>
             <span class="post-meta">{{ event.datetime | date: date_format }}</span>
