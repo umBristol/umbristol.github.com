@@ -15,7 +15,7 @@
 title: umBristol
 description: The Bristol Umbraco User Group.
 baseurl: ""
-url: "http://umbristol.co.uk"
+url: "https://umbristol.co.uk"
 permalink: /:year/:month/:day/:title/
 exclude: ["README.md", "Gemfile.lock", "Gemfile"]
 

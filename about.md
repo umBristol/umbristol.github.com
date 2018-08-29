@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The Bristol Umbraco User Group - [umbristol.co.uk](http://umbristol.co.uk)
+The Bristol Umbraco User Group - [umbristol.co.uk](https://umbristol.co.uk)
 
 The aim of the user-group is to meet on a monthly basis, with a 2-monthly rotation: one month being an informal social gathering at a pub; the following month an office-based session/talk meet-up hosted by a local Umbraco partner/business.
 
