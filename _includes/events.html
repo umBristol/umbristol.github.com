@@ -14,7 +14,7 @@
     {% endfor %}
 {% else %}
     <!-- Display upcoming events - {{ site.time }} -->
-    {% assign collection = (site.events | where_exp:"item", "item.datetime > site.time") | reverse %}
+    {% assign collection = (site.events | where_exp:"item", "item.datetime > site.time") %}
 
     {% if collection.size > 0 %}
         {% for event in collection %}       
