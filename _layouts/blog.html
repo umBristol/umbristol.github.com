@@ -9,7 +9,7 @@ layout: default
 
   {% assign collection = (site.posts) | reverse %}
   <ul class="post-list">
-    {% for post in collection %}
+    {% for post in collection | reverse %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
